@@ -1,0 +1,256 @@
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --four00: 400;
+    --seven00: 700;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Karla', serif, sans-serif;
+}
+
+body {
+    background-color: var(--Light-Gray);
+}
+
+.father-box {
+    margin: 3rem auto;
+    width: 600px;
+    box-shadow: 0px 10px 10px -3.5px #dbdbdb,
+        -10px 0px 15px -3.5px rgb(204, 204, 204),
+        10px 0px 10px -2px rgb(204, 204, 204);
+}
+
+.first-box {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: white;
+    width: 600px;
+    height: 250px;
+    padding: 3rem;
+}
+
+.first-box h1 {
+    font-weight: 700;
+    color: var(--Cyan);
+    padding: 2% 0;
+}
+
+.first-box h3 {
+    font-weight: 700;
+    color: var(--Bright-Yellow);
+    padding: 1.5% 0;
+}
+
+.first-box>p {
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+    padding: 1% 0;
+}
+
+.second-box {
+    width: 600px;
+    height: 250px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+.second-box-1 {
+    width: 300px;
+    height: 250px;
+    background-color: var(--Cyan);
+    padding: 2rem 2rem;
+    color: white;
+}
+
+.second-box-1>h4 {
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.money {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.money>h2 {
+    font-size: 2rem;
+}
+
+.money>p {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+.second-box-1>h3 {
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 0.8rem 0rem;
+}
+
+.btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 0%;
+}
+
+.btn {
+    width: 15rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: 1px var(--Bright-Yellow) solid;
+    background-color: var(--Bright-Yellow);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px rgb(124, 124, 124);
+    transition: box-shadow 100ms;
+    opacity: (0.7);
+}
+
+.btn:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0px 4px 4px hsl(179, 63%, 46%);
+    opacity: (1);
+}
+
+.second-box-2 {
+    padding: 2rem 2rem;
+    width: 300px;
+    height: 250px;
+    background-color: hsl(179, 66%, 46%);
+}
+
+.second-box-2>h3 {
+    color: white;
+    color: 1rem;
+    margin: 0.4rem 0rem;
+}
+
+.second-box-2>p {
+    color: var(--Light-Gray);
+    opacity: 0.8;
+    font-size: 0.9rem;
+    padding: 0.07rem;
+}
+
+@media (min-width: 100px) and (max-width: 650px) {
+
+    .father-box,
+    .first-box,
+    .second-box {
+        width: 500px;
+    }
+
+    .second-box-1,
+    .second-box-2 {
+        width: 250px;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 530px) {
+
+    .father-box{
+        width: 90vw;
+        height: 300px;
+        margin: 5rem auto;
+        text-align: center;
+    }
+
+    .first-box{
+        width: 90vw;
+        height: 300px;
+        padding: 2rem;
+    }
+
+    .first-box > h1{
+        font-size: 1.4rem;
+    }
+    .first-box > h3{
+        font-size: 1.3rem;
+        margin: 0.8rem 0rem;
+
+    }
+    .first-box > p{
+        font-size: 1rem;
+        margin-top: 1.25rem;
+    }
+
+    .second-box-1,
+    .second-box-2 {
+        width: 90vw;
+    }
+
+    .second-box {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 90vw;
+    }
+
+    .money{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn{
+        width: 70vw;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 330px) {
+    .first-box{
+        width: 90vw;
+        height: 270px;
+        padding: 2rem;
+        overflow: scroll;
+    }
+
+    .first-box > h1{
+        font-size: 1.2rem;
+    }
+    .first-box > h3{
+        font-size: 1.05rem;
+        margin: 0.8rem 0rem;
+    }
+    .first-box > p{
+        font-size: 0.8rem;
+        margin-top: 1.25rem;
+    }
+
+    .second-box-1,
+    .second-box-2 {
+        width: 90vw;
+    }
+
+    .second-box-1 > h3{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (min-width: 100px) and (max-width: 270px) {
+
+    .first-box > h1{
+        font-size: 1rem;
+    }
+    .first-box > h3{
+        font-size: 0.7rem;
+        margin: 0.5rem 0rem;
+    }
+    .first-box > p{
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+}
